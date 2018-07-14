@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="craft-admin-gateway" />
+        <module name="craft-module-ad" />
+        <module name="craft-module-agent" />
+        <module name="craft-module-chat" />
+        <module name="craft-module-contract" />
+        <module name="craft-module-employ" />
+        <module name="craft-module-order" />
+        <module name="craft-module-voice" />
+        <module name="craft-module-worker" />
+        <module name="craft-module-yipay" />
+        <module name="craft-web-gateway" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="craft-admin-gateway" target="1.7" />
+      <module name="craft-framwork" target="1.5" />
+      <module name="craft-module-ad" target="1.7" />
+      <module name="craft-module-agent" target="1.7" />
+      <module name="craft-module-chat" target="1.7" />
+      <module name="craft-module-contract" target="1.7" />
+      <module name="craft-module-employ" target="1.7" />
+      <module name="craft-module-order" target="1.7" />
+      <module name="craft-module-voice" target="1.7" />
+      <module name="craft-module-worker" target="1.7" />
+      <module name="craft-module-yipay" target="1.7" />
+      <module name="craft-web-gateway" target="1.7" />
+    </bytecodeTargetLevel>
+  </component>
+</project>

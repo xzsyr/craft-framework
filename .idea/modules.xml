@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/craft-admin-gateway/craft-admin-gateway.iml" filepath="$PROJECT_DIR$/craft-admin-gateway/craft-admin-gateway.iml" />
+      <module fileurl="file://$PROJECT_DIR$/craft-framwork.iml" filepath="$PROJECT_DIR$/craft-framwork.iml" />
+      <module fileurl="file://$PROJECT_DIR$/craft-module-ad/craft-module-ad.iml" filepath="$PROJECT_DIR$/craft-module-ad/craft-module-ad.iml" />
+      <module fileurl="file://$PROJECT_DIR$/craft-module-agent/craft-module-agent.iml" filepath="$PROJECT_DIR$/craft-module-agent/craft-module-agent.iml" />
+      <module fileurl="file://$PROJECT_DIR$/craft-module-chat/craft-module-chat.iml" filepath="$PROJECT_DIR$/craft-module-chat/craft-module-chat.iml" />
+      <module fileurl="file://$PROJECT_DIR$/craft-module-contract/craft-module-contract.iml" filepath="$PROJECT_DIR$/craft-module-contract/craft-module-contract.iml" />
+      <module fileurl="file://$PROJECT_DIR$/craft-module-employ/craft-module-employ.iml" filepath="$PROJECT_DIR$/craft-module-employ/craft-module-employ.iml" />
+      <module fileurl="file://$PROJECT_DIR$/craft-module-order/craft-module-order.iml" filepath="$PROJECT_DIR$/craft-module-order/craft-module-order.iml" />
+      <module fileurl="file://$PROJECT_DIR$/craft-module-voice/craft-module-voice.iml" filepath="$PROJECT_DIR$/craft-module-voice/craft-module-voice.iml" />
+      <module fileurl="file://$PROJECT_DIR$/craft-module-worker/craft-module-worker.iml" filepath="$PROJECT_DIR$/craft-module-worker/craft-module-worker.iml" />
+      <module fileurl="file://$PROJECT_DIR$/craft-module-yipay/craft-module-yipay.iml" filepath="$PROJECT_DIR$/craft-module-yipay/craft-module-yipay.iml" />
+      <module fileurl="file://$PROJECT_DIR$/craft-web-gateway/craft-web-gateway.iml" filepath="$PROJECT_DIR$/craft-web-gateway/craft-web-gateway.iml" />
+    </modules>
+  </component>
+</project>
