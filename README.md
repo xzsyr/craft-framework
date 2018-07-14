@@ -112,5 +112,11 @@ EurekaServerHaApplication Run as 'Java Application'#启动注册中心服务器s
 ##.    其他
 <p>全部服务使用swagger2构建强大的RESTful API文档</br>
 参考文档：http://blog.didispace.com/springbootswagger2</p>
+代码提交说明
+- 文件提交采取以下模板格式
+【模块名称】修改说明 例：【工匠模块】调整代码查询bug....
+- 对全性文件提交采取以下模板格式
+【寻找手艺人】调整README.md说明文件内容
+
 
 ##Q&A
