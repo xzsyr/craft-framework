@@ -1,0 +1,13 @@
+server:
+  port: 8760
+spring:
+  application:
+    name: craft-enreka-server
+eureka:
+  instance:
+    hostname: peer1
+  client:
+    #registerWithEureka: false
+    #fetchRegistry: false
+    serviceUrl:
+      defaultZone: http://peer2:8761/eureka/

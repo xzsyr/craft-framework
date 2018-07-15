@@ -1,0 +1,73 @@
+zuul.routes.api-a.path=/api-a/**
+zuul.routes.api-a.serviceId=feign-consumer
+我们说当我的访问地址符合/api-a/**规则的时候，会被自动定位到feign-consumer服务上去，不过两行代码有点麻烦，我们可以用下面一行代码来代替，如下：
+zuul.routes.feign-consumer=/api-a/**
+zuul.routes后面跟着的是服务名，服务名后面跟着的是路径规则，这种配置方式显然更简单。 
+如果映射规则我们什么都不写，系统也给我们提供了一套默认的配置规则，默认的配置规则如下：
+zuul.routes.feign-consumer.path=/feign-consumer/**
+zuul.routes.feign-consumer.serviceId=feign-consumer
+#####################################################################
+zuul.routes.feign-consumer.path=/feign-consumer/**
+zuul.routes.feign-consumer.serviceId=feign-consumer
+ 
+zuul.routes.feign-consumer-hello.path=/feign-consumer/hello/**
+zuul.routes.feign-consumer-hello.serviceId=feign-consumer-hello
+Zuul中的路径匹配方式是一种线性匹配方式，即按照路由匹配规则的存储顺序依次匹配，
+因此我们只需要确保feign-consumer-hello的匹配规则被先定义feign-consumer的匹配规则被后定义即可，
+但是在properties文件中我们不能保证这个先后顺序，此时我们需要用YAML来配置，
+这个时候我们可以删掉resources文件夹下的application.properties，然后新建一个application.yml;
+############################################################
+忽略掉一个服务，不给某个服务设置映射规则
+zuul.ignored-services=hello-service属性可以忽略掉一个服务，不给某个服务设置映射规则
+zuul:
+ ignored-patterns: /**/hello/**
+ 
+此外，我们也可以统一的为路由规则增加前缀，设置方式如下
+zuul:
+ prefix: /myapi
+ 
+我希望用户在访问/local时能够自动跳转到这个方法上来处理，那么此时我们需要用到Zuul的本地跳转，配置方式如下：
+zuul:
+ prefix: /myapi
+ ignored-patterns: /**/hello/**
+ routes:
+  local:
+   path: /local/**
+   url: forward:/local
+http://localhost:2006/myapi/local
+
+API网关在进行请求路由转发前为请求设置Host头信息:
+zuul:
+ add-host-header: true
+默认情况下，敏感的头信息无法经过API网关进行传递，我们可以通过如下配置使之可以传递:
+zuul:
+ routes:
+  feign-consumer:
+   sensitiveHeaders:
+在Zuul中，Ribbon和Hystrix的配置还是和之前的配置方式一致，这里我就不赘述了，如果我们想关闭Hystrix重试机制，可以通过如下方式：
+关闭全局重试机制：
+zuul:
+ retryable: false
+关闭某一个服务的重试机制：
+zuul:
+ routes:
+  feign-consumer:
+   retryable: false
+
+#是否开启重试功能
+#zuul.retryable=true
+#对当前服务的重试次数
+#ribbon.MaxAutoRetries=2
+#切换相同Server的次数
+#ribbon.MaxAutoRetriesNextServer=0   
+   
+zuulfilter
+ filterType：返回一个字符串代表过滤器的类型，在zuul中定义了四种不同生命周期的过滤器类型，具体如下： 
+	pre：路由之前
+	routing：路由之时
+	post： 路由之后
+	error：发送错误调用
+	filterOrder：过滤的顺序
+	shouldFilter：这里可以写逻辑判断，是否要过滤，本文true,永远过滤。
+	run：过滤器的具体逻辑。可用很复杂，包括查sql，nosql去判断该请求到底有没有权限访问。
+	

@@ -1,0 +1,15 @@
+spring.cloud.config.server.git.uri：配置git仓库地址
+spring.cloud.config.server.git.searchPaths：配置仓库路径
+spring.cloud.config.label：配置仓库的分支
+spring.cloud.config.server.git.username：访问git仓库的用户名
+spring.cloud.config.server.git.password：访问git仓库的用户密码
+如果Git仓库为公开仓库，可以不填写用户名和密码，如果是私有仓库需要填写。
+
+http请求地址和资源文件映射如下:
+/{application}/{profile}[/{label}]
+/{application}-{profile}.yml
+/{label}/{application}-{profile}.yml
+/{application}-{profile}.properties
+/{label}/{application}-{profile}.properties
+#配置高可用
+eureka.client.serviceUrl.defaultZone=http://localhost:8889/eureka/

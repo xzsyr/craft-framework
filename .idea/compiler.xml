@@ -7,31 +7,48 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="craft-admin-gateway" />
+        <module name="craft-config-server" />
+        <module name="craft-eureka-server" />
+        <module name="craft-eureka-server-ha" />
         <module name="craft-module-ad" />
         <module name="craft-module-agent" />
         <module name="craft-module-chat" />
+        <module name="craft-module-common" />
         <module name="craft-module-contract" />
+        <module name="craft-module-core" />
         <module name="craft-module-employ" />
         <module name="craft-module-order" />
         <module name="craft-module-voice" />
         <module name="craft-module-worker" />
         <module name="craft-module-yipay" />
+        <module name="craft-search-server" />
         <module name="craft-web-gateway" />
+        <module name="craft-zipkin-server" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
-      <module name="craft-admin-gateway" target="1.7" />
-      <module name="craft-framwork" target="1.5" />
+      <module name="craft-admin-gateway" target="1.8" />
+      <module name="craft-config-server" target="1.7" />
+      <module name="craft-enreka-server" target="1.7" />
+      <module name="craft-enreka-server-ha" target="1.7" />
+      <module name="craft-eureka-server" target="1.7" />
+      <module name="craft-eureka-server-ha" target="1.7" />
+      <module name="craft-framwork" target="1.8" />
       <module name="craft-module-ad" target="1.7" />
       <module name="craft-module-agent" target="1.7" />
       <module name="craft-module-chat" target="1.7" />
+      <module name="craft-module-common" target="1.8" />
       <module name="craft-module-contract" target="1.7" />
-      <module name="craft-module-employ" target="1.7" />
+      <module name="craft-module-core" target="1.8" />
+      <module name="craft-module-employ" target="1.8" />
       <module name="craft-module-order" target="1.7" />
       <module name="craft-module-voice" target="1.7" />
       <module name="craft-module-worker" target="1.7" />
       <module name="craft-module-yipay" target="1.7" />
+      <module name="craft-search-server" target="1.7" />
+      <module name="craft-sleuth-server" target="1.8" />
       <module name="craft-web-gateway" target="1.7" />
+      <module name="craft-zipkin-server" target="1.8" />
     </bytecodeTargetLevel>
   </component>
 </project>
