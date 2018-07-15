@@ -118,5 +118,6 @@ EurekaServerHaApplication Run as 'Java Application'#启动注册中心服务器s
 - 对全性文件提交采取以下模板格式
 【寻找手艺人】调整README.md说明文件内容
 
+##分支说明
 
 ##Q&A
