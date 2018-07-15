@@ -119,5 +119,9 @@ EurekaServerHaApplication Run as 'Java Application'#启动注册中心服务器s
 【寻找手艺人】调整README.md说明文件内容
 
 ##分支说明
-
+- dev分支
+  用于开发调试
+- master分支
+  只做代码同步更新，用于生产环境
+  
 ##Q&A
