@@ -99,7 +99,7 @@ JAVA语言开发、跨平台、高性能、高可用、安全、服务化、模�
 ##.    部署说明
 
 ###1、下载源码
-https://github.com/xzsyr/learn/tree/master/craft-parent
+https://github.com/xzsyr/craft-framework.git
 ###2、  修改域名host文件 
  <p> C:\Windows\System32\drivers\etc<br>
     新增配置项
